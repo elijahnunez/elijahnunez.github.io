@@ -1,0 +1,96 @@
+body {
+    background-color: #ffffff;
+    margin: 20px; /* Adjusted margin for the body */
+    padding: 20px; /* Adjusted padding for the body */
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif, monospace;
+    font-weight: bold;
+    font-size: 40px; /* Adjusted font size */
+    text-align: center;
+    margin: 10px 0; /* Adjusted margin for h1 */
+    padding: 10px; /* Adjusted padding for h1 */
+    color: rgba(88, 140, 252, 0.787);
+}
+
+button {
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid rgba(255, 0, 0, 0.787);
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 0; /* Adjusted margin for button */
+    color: rgba(255, 0, 0, 0.787);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Adjust the height as needed */
+}
+
+.slide {
+    width: 100%;
+    max-width: 80%;
+    height: 400px; /* Adjusted height for the slide */
+    margin: 20px auto; /* Center horizontally with more margin */
+    padding: 30px; /* Increased padding for a more pronounced effect */
+    background-color: #ffffff;
+    color: #fff;
+    font-family: "Neue Haas Grotesk", Icons;
+    border: 3px solid #fff; /* Increased border thickness */
+    overflow: auto;
+    text-align: center;}
+
+.style-box {
+    background-color: white;
+    border: 2px solid rgba(88, 140, 252, 0.787);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 26px; /* Adjusted font size */
+    margin: 15px 0; /* Adjusted margin for style-box */
+    text-align: center;
+    color: rgba(88, 140, 252, 0.787);
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif, monospace;
+    font-size: 28px; /* Adjusted font size */
+    text-align: center;
+    color: rgba(88, 140, 252, 0.787);
+}
+
+h2, p, ul, label {
+    font-family: 'Roboto', sans-serif, monospace;
+    font-size: 24px;
+    text-align: center;
+    color: rgba(88, 140, 252, 0.787);
+}
+
+p2 {
+    font-family: 'Roboto', sans-serif, monospace;
+    font-size: 24px;
+    text-align: left;
+    padding-top: 25px;
+    padding: 10px 15px;
+    color: rgba(88, 140, 252, 0.787);
+}
+
+#locationDropdown {
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid rgba(255, 0, 0, 0.787);
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 0; /* Adjusted margin for locationDropdown */
+    text-align: left;
+    color: rgba(255, 0, 0, 0.787);
+}
+
+#map {
+    height: 600px;
+    width: 75%;
+    margin: 20px auto; /* Center the map horizontally with more margin */
+}

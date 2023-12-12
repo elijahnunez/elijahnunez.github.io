@@ -1,0 +1,50 @@
+{
+  "places": [
+  {
+    "name": "Santurce",
+    "coordinates": [18.4481, -66.0642],
+    "styles": {
+      "Sicá": ["Bélen Santurce"],
+      "Cuembé": ["Cuembé Santurce"],
+      "Yubá": ["Leró Santurce"]
+    },
+    "popup": "<b>Santurce</b>"
+  },
+  {
+    "name": "San Juan",
+    "coordinates": [18.4436, -66.1136],
+    "styles": {
+      "Cuembé": ["Cuembé Cataño"],
+      "Holandés": ["Holandé Cataño"]
+    },
+    "popup": "<b>San Juan</b>"
+  },
+  {
+    "name": "Loiza",
+    "coordinates": [18.4401, -65.8798],
+    "styles": {
+      "Sicá": ["Bámbules", "Rulé", "Seis corrido"],
+      "Yubá": ["Corvé Loiza"]
+    },
+    "popup": "<b>Loiza</b>"
+  },
+  {
+    "name": "Ponce",
+    "coordinates": [18.0111, -66.6141],
+    "styles": {
+      "Holandés": ["Mariandá"],
+      "Cumbé": ["Belén Sur"],
+      "Yuba": ["Leró Sur"]
+    },
+    "popup": "<b>Ponce</b>"
+  },
+  {
+    "name": "Mayaguëz",
+    "coordinates": [18.2063, -67.1656],
+    "styles": {
+      "Holandés": ["Holandés"]
+    },
+    "popup": "<b>Mayagüez</b>"
+  }
+]
+}
