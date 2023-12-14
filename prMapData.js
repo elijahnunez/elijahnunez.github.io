@@ -77,7 +77,7 @@ locations.forEach((location, index) => {
 });
 
 function formatStyles(styles) {
-    let stylesContent = '<b>Music Styles:</b><br>';
+    let stylesContent = '<b>Bomba Styles:</b><br>';
     for (const style in styles) {
         stylesContent += `<b>${style}:</b> ${styles[style].join(', ')}<br>`;
     }
