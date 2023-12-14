@@ -2,31 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title> Map of Puerto Rican Bomba & Plena</title>
+    <title>Map of Puerto Rican Bomba & Plena</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-        crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-        crossorigin=""></script>
+          integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+          crossorigin="" />
     <link rel="stylesheet" href="PrMapData.css">
-    <style>
-        .slide {
-            display: none;
-        }
-        .active {
-            display: block;
-        }
-    </style>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+            integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+            crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
-<link rel="stylesheet" href="PrMapData.css">
 <body>
-
     <h1>Bomba Puertorriqueña</h1>
 
     <button onclick="showSlide(1)">What is Bomba Puertorriqueña?</button>
     <button onclick="showSlide(2)">The Fundamentals</button>
     <button onclick="showSlide(3)">Bomba Styles</button>
+
 
     <!-- Slides -->
     <div id="slides">
@@ -47,20 +39,24 @@
                 <p>Subidor(s) - Other Drummers</p>
         
                 <p><strong>Maracas (Shakers)</strong></p>
-                <p><strong>Cuá</strong> (two sticks played against a barrel)</p>
+                <p><strong>Cuás</strong> (two sticks played against a barrel)</p>
             </div>
         
             <div class="section">
                 <h2>Other Elements</h2>
         
                 <p><strong>Call and Response Songs</strong></p>
-                <p><strong>El Batéy</strong> - Dance Circle, where the gathering begins and a congregation would engage with the singers and musicians</p>
+                <p><strong>El Batéy</strong> - This is where the gathering begins and a congregation would engage with the singers and musicians</p>
         
                 <p><strong>Dancers</strong></p>
                 <p>Lead the Primo in the rhythm.</p>
                 <p>A dancer must first walk a <strong>Paseo</strong> where the dialogue between the dancer and drummer begins.</p>
                 <p>The dancer will then perform using <strong>Piquetes</strong>, which are improvised dance moves.</p>
                 <p>Bomba practitioners will call this a <strong>conversation</strong>.</p>
+                <div class="video-container">
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/M5ZaqRqz_FE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
             </div>
         </div>
         
@@ -68,22 +64,55 @@
             <h3>Main Styles of Bomba</h3>
             <p>Each style has a specific rhythm associated with it. From these styles, different parts of the island take inspiration and make their own twist.</p>
             <div id="stylesContainer" class="styles-container">
-                <div class="style-box">
+                <!-- Sicá -->
+                <div class="style-box" onclick="toggleVisibility('sicaDesc')">
                     <strong>Sicá</strong>
                 </div>
-                <div class="style-box">
+                <div id="sicaDesc" class="style-description" style="display:none;">
+                    <p>Follows a 2/4 or 4/4 rhythm</p>
+                    <p>Bomba Sicá is a traditional rhythm and dance form from Puerto Rico, characterized by its energetic and fast-paced beats. Originating from the island's African heritage, it involves dynamic interactions between dancers and drummers, creating a vibrant and expressive performance.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=ghLP5KXzzKs" target="_blank">Youtube link</a>
+                </div>
+        
+                <!-- Yubá -->
+                <div class="style-box" onclick="toggleVisibility('yubaDesc')">
                     <strong>Yubá</strong>
                 </div>
-                <div class="style-box">
+                <div id="yubaDesc" class="style-description" style="display:none;">
+                    <p>Follows a 6/8 rhythm</p>
+                    <p>known for its complex, intricate rhythms and slower tempo compared to other Bomba styles. It features a deep African influence and is typically accompanied by a call-and-response pattern between the lead drummer and dancers, creating a deeply interactive and culturally rich performance.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=TjEM_0Z14YU" target="_blank">Youtube link</a>
+                </div>
+        
+                <!-- Cuembé -->
+                <div class="style-box" onclick="toggleVisibility('cuembeDesc')">
+                    <strong>Cuembé</strong>
+                </div>
+                <div id="cuembeDesc" class="style-description" style="display:none;">
+                    <p>Follows a 2/4 or 4/4 rhythm</p>
+                    <p>Cuembé is often characterized by its distinctive rhythmic pattern, which sets it apart from other Bomba styles. The tempo and feel of Cuembé can vary, but like all Bomba music, it involves a deep interplay between the drummers and dancers, where the drum rhythms are responsive to the dancers' movements.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=-bWur6vgoa0" target="_blank">Youtube link</a>
+                </div>
+        
+                <!-- Holandés -->
+                <div class="style-box" onclick="toggleVisibility('holandesDesc')">
                     <strong>Holandés</strong>
+                </div>
+                <div id="holandesDesc" class="style-description" style="display:none;">
+                    <p>Follows a 2/4 or 4/4 rhythm</p>
+                    <p>Bomba Holandés is a lesser-known style of Bomba, a traditional Puerto Rican music and dance form. It's characterized by a unique rhythm that is distinct from other Bomba styles, often featuring a slower pace and a more solemn mood, reflecting the diverse influences and historical depth of Bomba's African roots in Puerto Rico.</p>
+                    <a href="https://www.youtube.com/watch?v=l0VPpyB3w5g" target="_blank">Youtube link</a>
                 </div>
             </div>
         </div>
-    </div>
-    <p2>Select a Municipality</p2>
+        
+    <h2>Select a Municipality</h2>
     <div>
-        <label for="locationDropdown">Go to:</label>
-        <select id="locationDropdown" onchange="goToLocation(this.value)">
+        <label for="municipalityDropdown">Go to:</label>
+        <select id="municipalityDropdown" onchange="goToLocation(this.value)">>
             <option value="catano">Cataño</option>
             <option value="santurce">Santurce</option>
             <option value="loiza">Loiza</option>
@@ -91,9 +120,22 @@
             <option value="mayaguez">Mayagüez</option>
         </select>
     </div>
+</div>
     <div id="map"></div>
-    <div id="info"></div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="Pr Map-data.js"></script>
+    <script src="prMap-data.js"></script>    
+    <script>
+        function showSlide(slideIndex) {
+            var slides = document.getElementsByClassName('slide');
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+
+            // Show the selected slide
+            var selectedSlide = document.getElementById('slide' + slideIndex);
+            if (selectedSlide) {
+                selectedSlide.classList.add('active');
+            }
+        }
+    </script>
 </body>
 </html>
