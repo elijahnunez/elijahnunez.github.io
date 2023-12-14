@@ -1,108 +1,102 @@
 body {
-    background: rgba(88, 140, 252, 0.787);
-    font-family: 'Roboto', sans-serif; /* Consistent font */
-    color: rgba(88, 140, 252, 0.787); /* High contrast text */
-    margin: 0;
-    padding: 0;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-h1, h2, h3, p, ul, button {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold; /* Bold typography */
-    text-align: center; /* Central alignment */
-}
-label, h2{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold; /* Bold typography */
-    text-align: center; /* Central alignment */
+    background-color: #ffffff;
+    margin: 20px; /* Adjusted margin for the body */
+    padding: 20px; /* Adjusted padding for the body */
 }
 
 h1 {
-    font-size: 40px;
-    text-align: left;
-    background-color: black;
-    color: white;
-    margin: 0;
-    padding: 20px 0; /* Increased padding */
-    animation: fadeIn 1s ease-in;
+    font-family: 'Roboto', sans-serif, monospace;
+    font-weight: bold;
+    font-size: 40px; /* Adjusted font size */
+    text-align: center;
+    margin: 10px 0; /* Adjusted margin for h1 */
+    padding: 10px; /* Adjusted padding for h1 */
+    color: rgba(88, 140, 252, 0.787);
 }
 
 button, #municipalityDropdown {
     background-color: white;
     color: rgba(255, 0, 0, 0.787); 
     border: 2px solid rgba(255, 0, 0, 0.787);
-    padding: 15px 30px; /* Increased padding */
-    margin: 15px; /* Consistent margin */
-    cursor: pointer; /* Cursor change to indicate interactivity */
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 0; /* Adjusted margin for button */
+    color: rgba(255, 0, 0, 0.787);
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    height: 90vh; /* Adjust the height as needed */
 }
 
 .slide {
-    background-color: white;
-    border: 4px solid black; /* Bolder border */
-    padding: 40px; /* Increased padding */
-    margin: 30px    ; /* Increased margin */
-    animation: fadeIn 1s ease-in;
-}
+    width: 100%;
+    max-width: 80%;
+    height: 400px; /* Adjusted height for the slide */
+    margin: 20px auto; /* Center horizontally with more margin */
+    padding: 30px; /* Increased padding for a more pronounced effect */
+    background-color: #ffffff;
+    color: #fff;
+    font-family: "Neue Haas Grotesk", Icons;
+    border: 3px solid #fff; /* Increased border thickness */
+    overflow: auto;
+    text-align: center;}
 
-.slide {
-    display: none;
-}
-
-.active {
-    display: block;
-}
-.video-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Adjust the height as needed */
-    background-color: #f0f0f0; /* Optional background color for the container */
-}
-
-/* Style the embedded YouTube iframe as needed */
-.video-container iframe {
-    max-width: 100%; /* Ensure the video scales with the container */
-}
 .style-box {
-    background-color: black;
-    color: white; /* High contrast */
-    border: none; /* Simplified, no border */
-    padding: 15px 30px;
-    margin: 20px 0;
+    background-color: white;
+    border: 2px solid rgba(88, 140, 252, 0.787);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 26px; /* Adjusted font size */
+    margin: 15px 0; /* Adjusted margin for style-box */
+    text-align: center;
+    color: rgba(88, 140, 252, 0.787);
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif, monospace;
+    font-size: 28px; /* Adjusted font size */
+    text-align: center;
+    color: rgba(88, 140, 252, 0.787);
+}
+
+h2, p, ul, label {
+    font-family: 'Roboto', sans-serif, monospace;
+    font-size: 24px;
+    text-align: center;
+    color: rgba(88, 140, 252, 0.787);
+}
+
+p2 {
+    font-family: 'Roboto', sans-serif, monospace;
+    font-size: 24px;
+    text-align: left;
+    padding-top: 25px;
+    padding: 10px 15px;
+    color: rgba(88, 140, 252, 0.787);
+}
+
+#locationDropdown {
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid rgba(255, 0, 0, 0.787);
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 0; /* Adjusted margin for locationDropdown */
+    text-align: left;
+    color: rgba(255, 0, 0, 0.787);
 }
 
 #map-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* This will vertically center the map if the container has extra space */
-    width: 100%; /* Adjust the width as needed */
-    /* Add additional styling as needed */
+    flex-direction: column; /* Adjusted flex direction for proper layout */
+    align-items: center; /* Center map horizontally */
 }
 
 #map {
-    height: 450px; /* Adjusted height */
-    width: 80%; /* Adjusted width */
-    border: 5px solid black; /* Bold border */
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left:120px;
-    margin-right: 50px;
+    height: 600px;
+    width: 75%;
+    margin: 20px auto; /* Center the map horizontally with more margin */
 }
