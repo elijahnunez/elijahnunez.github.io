@@ -2,6 +2,7 @@ body {
     background-color: #ffffff;
     margin: 20px; /* Adjusted margin for the body */
     padding: 20px; /* Adjusted padding for the body */
+    background-image: image('bomba.peg.jpeg');
 }
 
 h1 {
