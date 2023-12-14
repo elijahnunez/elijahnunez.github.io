@@ -1,17 +1,53 @@
 body {
-    background-color: #ffffff;
-    margin: 20px; /* Adjusted margin for the body */
-    padding: 20px; /* Adjusted padding for the body */
+    background-size: cover; /* Adjust as needed to control the background image size */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background image */
+    /* Other CSS styles for the body element */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif, monospace;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 40px; /* Adjusted font size */
-    text-align: center;
-    margin: 10px 0; /* Adjusted margin for h1 */
-    padding: 10px; /* Adjusted padding for h1 */
-    color: rgba(88, 140, 252, 0.787);
+    font-size: 40px;
+    text-align: left;
+    background-color: black;
+    background-size: cover;
+    color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in;
+}
+
+.row-bg-wrap {
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 255, 0.787);
+
+}
+
+.nectar-shape-divider-wrap {
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    /* Adjust the styles for your existing content */
 }
 
 button {
@@ -20,7 +56,7 @@ button {
     border: 2px solid rgba(255, 0, 0, 0.787);
     padding: 10px 20px;
     font-size: 16px;
-    margin: 10px 0; /* Adjusted margin for button */
+    margin: 10px;
     color: rgba(255, 0, 0, 0.787);
 }
 
@@ -28,54 +64,55 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh; /* Adjust the height as needed */
+    height: 90vh;
 }
 
 .slide {
     width: 100%;
     max-width: 80%;
-    height: 400px; /* Adjusted height for the slide */
-    margin: 20px auto; /* Center horizontally with more margin */
-    padding: 30px; /* Increased padding for a more pronounced effect */
+    height: auto; /* Adjusted height to accommodate content */
+    margin: 20px auto;
+    padding: 30px;
     background-color: #ffffff;
     color: #fff;
     font-family: "Neue Haas Grotesk", Icons;
-    border: 3px solid #fff; /* Increased border thickness */
+    border: 3px solid #fff;
     overflow: auto;
-    text-align: center;}
+    text-align: center;
+}
+
+.active {
+    display: block;
+    opacity: 1; /* Restored opacity for active slides */
+}
 
 .style-box {
     background-color: white;
     border: 2px solid rgba(88, 140, 252, 0.787);
     padding: 10px 20px;
     font-weight: bold;
-    font-size: 26px; /* Adjusted font size */
-    margin: 15px 0; /* Adjusted margin for style-box */
+    font-size: 26px;
+    margin: 15px 0;
     text-align: center;
     color: rgba(88, 140, 252, 0.787);
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif, monospace;
-    font-size: 28px; /* Adjusted font size */
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
     text-align: center;
     color: rgba(88, 140, 252, 0.787);
 }
 
 h2, p, ul, label {
-    font-family: 'Roboto', sans-serif, monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     text-align: center;
     color: rgba(88, 140, 252, 0.787);
 }
 
-p2 {
-    font-family: 'Roboto', sans-serif, monospace;
-    font-size: 24px;
-    text-align: left;
-    padding-top: 25px;
-    padding: 10px 15px;
-    color: rgba(88, 140, 252, 0.787);
+p {
+    font-size: 20px; /* Adjusted font size for paragraphs */
 }
 
 #locationDropdown {
@@ -84,13 +121,20 @@ p2 {
     border: 2px solid rgba(255, 0, 0, 0.787);
     padding: 10px 20px;
     font-size: 16px;
-    margin: 10px 0; /* Adjusted margin for locationDropdown */
+    margin: 10px;
     text-align: left;
     color: rgba(255, 0, 0, 0.787);
 }
 
+#map-container {
+    display: flex;
+    flex-direction: column; /* Adjusted flex direction for proper layout */
+    align-items: center; /* Center map horizontally */
+}
+
 #map {
-    height: 600px;
-    width: 75%;
-    margin: 20px auto; /* Center the map horizontally with more margin */
+    height: 400px; /* Adjusted map height for better visibility */
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 20px; /* Adjusted margin for better spacing */
 }
